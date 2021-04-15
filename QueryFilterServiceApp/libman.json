@@ -1,0 +1,25 @@
+{
+  "version": "1.0",
+  "defaultProvider": "filesystem",
+  "libraries": [
+    {
+      "library": "node_modules/devexpress-richedit/dist/icons/",
+      "destination": "wwwroot/css/icons",
+      "files": [
+        "dxre-icons.ttf",
+        "dxre-icons.woff",
+        "dxre-icons.woff2"
+      ]
+    },
+    {
+      "library": "node_modules/devextreme/dist/css/icons/",
+      "destination": "wwwroot/css/icons",
+      "files": [
+        "dxicons.ttf",
+        "dxicons.woff2",
+        "dxicons.woff"
+      ]
+    }
+
+  ]
+}
