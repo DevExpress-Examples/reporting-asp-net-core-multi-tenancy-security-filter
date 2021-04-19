@@ -1,5 +1,0 @@
-{
-	"AutoGenerateVb" : false,
-	"Topics" : ["xtrareports", "aspnetcore", "reporting", "security", "multitenancy"],
-	"Description": "Support for Multi-Tenancy in DevExpress Web Reporting"
-}
