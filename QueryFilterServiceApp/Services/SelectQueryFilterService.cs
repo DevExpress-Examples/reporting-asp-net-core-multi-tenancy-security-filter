@@ -1,23 +1,15 @@
-using System;
 using System.Collections.Generic;
-using System.Diagnostics;
 using System.Linq;
 using DevExpress.Data.Filtering;
 using DevExpress.DataAccess.Sql;
 using DevExpress.DataAccess.Web;
-using Microsoft.AspNetCore.Http;
 
 namespace QueryFilterServiceApp.Services {
     public class SelectQueryFilterService : ISelectQueryFilterService {
         readonly int studentId;
 
-        public SelectQueryFilterService(IUserService userService, IHttpContextAccessor contextAccessor) {
-		// Beta version workaround: 
-		// an instance of the SelectQueryFilterService class is created (but not used) 
-		// at program startup when http context is not available.
-            if(contextAccessor.HttpContext != null) {   
-                studentId = userService.GetCurrentUserId();
-            }
+        public SelectQueryFilterService(IUserService userService) {
+            studentId = userService.GetCurrentUserId();
         }
 
         public CriteriaOperator CustomizeFilterExpression(
