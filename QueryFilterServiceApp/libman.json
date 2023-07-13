@@ -12,7 +12,7 @@
       ]
     },
     {
-      "library": "node_modules/devextreme/dist/css/icons/",
+      "library": "node_modules/devextreme-dist/css/icons/",
       "destination": "wwwroot/css/icons",
       "files": [
         "dxicons.ttf",
