@@ -2,18 +2,11 @@
 [![](https://img.shields.io/badge/Open_in_DevExpress_Support_Center-FF7200?style=flat-square&logo=DevExpress&logoColor=white)](https://supportcenter.devexpress.com/ticket/details/T990777)
 [![](https://img.shields.io/badge/📖_How_to_use_DevExpress_Examples-e9f6fc?style=flat-square)](https://docs.devexpress.com/GeneralInformation/403183)
 <!-- default badges end -->
-# Row-Level Filtering in ASP.NET Core Reporting Application with SqlDataSource (Multi-Tenancy Support)
-
-## Files to look at
-
-- [UserService.cs](QueryFilterServiceApp/Services/UserService.cs)
-- [SelectQueryFilterService.cs](QueryFilterServiceApp/Services/SelectQueryFilterService.cs)
-- [Startup.cs](QueryFilterServiceApp/Startup.cs)
+# Reporting for ASP.NET Core - Row-Level Filtering in an Application with SqlDataSource (Multi-Tenancy Support)
 
 This example demonstrates how to restrict access at the row level to the source data based on the user who is logged into the system. Create and register a service that implements the [DevExpress.DataAccess.Web.ISelectQueryFilterService](https://docs.devexpress.com/CoreLibraries/DevExpress.DataAccess.Web.ISelectQueryFilterService) interface. The [ISelectQueryFilterService.CustomizeFilterExpression](https://docs.devexpress.com/CoreLibraries/DevExpress.DataAccess.Web.ISelectQueryFilterService.CustomizeFilterExpression(DevExpress.DataAccess.Sql.SelectQuery-DevExpress.Data.Filtering.CriteriaOperator)) method applies a conditional clause to the query passed to the method as a parameter.  The **Document Viewer**, **Report Designer's Preview**, and **Query Builder** call the `ISelectQueryFilterService` service before the [SqlDataSource](https://docs.devexpress.com/CoreLibraries/DevExpress.DataAccess.Sql.SqlDataSource) executes a SELECT query.
 
 ## Implementation details
-
 
 ### Authentication
 
@@ -42,3 +35,9 @@ The `QueryFilterServiceApp` connection string is stored in the secret storage, a
 }
 ```
 The `RemoveXpoProviderKey` method converts the DevExpress XPO connection string to a connection string that Entity Framework can use.
+
+## Files to Review
+
+- [UserService.cs](QueryFilterServiceApp/Services/UserService.cs)
+- [SelectQueryFilterService.cs](QueryFilterServiceApp/Services/SelectQueryFilterService.cs)
+- [Startup.cs](QueryFilterServiceApp/Startup.cs)
