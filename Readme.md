@@ -44,7 +44,7 @@ The `RemoveXpoProviderKey` method converts the DevExpress XPO connection string 
 - [SelectQueryFilterService.cs](QueryFilterServiceApp/Services/SelectQueryFilterService.cs)
 - [Startup.cs](QueryFilterServiceApp/Startup.cs)
 <!-- feedback -->
-## Does this example address your development requirements/objectives?
+## Does This Example Address Your Development Requirements/Objectives?
 
 [<img src="https://www.devexpress.com/support/examples/i/yes-button.svg"/>](https://www.devexpress.com/support/examples/survey.xml?utm_source=github&utm_campaign=reporting-asp-net-core-multi-tenancy-security-filter&~~~was_helpful=yes) [<img src="https://www.devexpress.com/support/examples/i/no-button.svg"/>](https://www.devexpress.com/support/examples/survey.xml?utm_source=github&utm_campaign=reporting-asp-net-core-multi-tenancy-security-filter&~~~was_helpful=no)
 
